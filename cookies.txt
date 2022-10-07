@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+aluno.usjt.br	TRUE	/	FALSE	1999999999	PHPSESSID	d9d26babfda88401d3cef63662f5a576
+

@@ -1,0 +1,573 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* v.03 */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+form {
+    display: contents;
+}
+
+
+body,
+html {
+    background: -webkit-linear-gradient(-25deg, #dbe830 0%, #06cef0 40%, #28a1fd 70%) #06cef0;
+    background: -moz-linear-gradient(-25deg, #dbe830 0%, #06cef0 40%, #28a1fd 70%) #06cef0;
+    background: linear-gradient(115deg, #dbe830 0%, #06cef0 40%, #28a1fd 70%) #06cef0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-size: 11px;
+}
+
+.logoCircle {
+    height: 100%;
+    width: 48%;
+    float: left;
+    background: url(logoCircle.svg) center no-repeat;
+    background-size: auto 135vh;
+}
+
+.logoCircleUnibh,
+.logoCircleUNIBH {
+    background-image: url(logoCircleUnibh.svg);
+}
+
+.logoCircleUna,
+.logoCircleUNA {
+    background-image: url(logoCircleUna.svg);
+}
+
+.logoCircleSaoJudas,
+.logoCircleUSJT {
+    background-image: url(logoCircleSaoJudas.svg);
+}
+
+.logoCircleUnisociesc,
+.logoCircleSOCIESC,
+.logoCircleUNISOCIESC {
+    background-image: url(logoCircleUnisociesc.svg);
+}
+
+.logoCircleFASEH {
+    background-image: url(logoCircleFaseh.svg);
+}
+
+.logoCircleAGES {
+    background-image: url(logoCircleAges.svg);
+}
+
+.logoCircleUnisul,
+.logoCircleUNISUL {
+    background-image: url(logoCircleUnisul.svg);
+}
+
+.logoCircleFadergs,
+.logoCircleFADERGS {
+    background-image: url(logoCircleFadergs.svg);
+}
+
+.logoCircleIbmr,
+.logoCircleIBMR {
+    background-image: url(logoCircleIbmr.svg);
+}
+
+.logoCircleUnifacs,
+.logoCircleUNIFACS {
+    background-image: url(logoCircleUnifacs.svg);
+}
+
+.logoCircleUniritter,
+.logoCircleUNIRITTER {
+    background-image: url(logoCircleUniritter.svg);
+}
+
+.logoCircleUnp,
+.logoCircleUNP {
+    background-image: url(logoCircleUnp.svg);
+}
+
+.logoCircleUam,
+.logoCircleUAM {
+    background-image: url(logoCircleAnhembimorumbi.svg);
+}
+
+.logoCircleMcampos,
+.logoCircleMCAMPOS {
+    background-image: url(logoCircleMiltoncampos.svg);
+}
+
+.logoCircleFpb,
+.logoCircleFPB {
+    background-image: url(logoCircleFbp.svg);
+}
+
+.logoCircleUnifgua,
+.logoCircleUNIFGUA {
+    background-image: url(logoCircleUnifg.svg);
+}
+
+.circleCont {
+    height: 100vh;
+    top: 0;
+    right: -50px;
+    width: 55%;
+    min-width: 650px;
+    position: absolute;
+    float: right;
+    background: url(whiteCircle.svg) left no-repeat;
+    background-size: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Links no bottom da página*/
+.botLinkCont {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+
+    .botLinkCont a {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+
+/*CONTAINER COM INPUTS, BOTÕES E LINKS*/
+.loginCont {
+    width: 245px;
+    color: #959595;
+    font-size: 1em;
+    max-height: 100%;
+    overflow-y: auto;
+	position: relative;
+}
+
+    .loginCont h3,
+    .loginCont h4 {
+        font-size: 1.8em;
+		padding-left: 3px;
+        font-weight: normal;
+        margin-bottom: 1em;
+		color: #777;
+		text-align: left;
+    }
+    
+    .loginCont h4 {
+		font-size: 1.1em;
+		padding-left: 0;
+		font-weight: bold;
+	}
+
+    .loginCont p {
+        margin-bottom: 1em;
+    }
+
+a {
+    text-decoration: none;
+    color: #1F80E1;
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: #0f6fd0;
+    }
+
+.linkCont {
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .linkCont span {
+        color: #bbb;
+        padding: 0;
+    }
+
+    .linkCont a strong {
+        display: inline-block;
+        padding-right: .5em;
+    }
+
+.loginCont input[type="text"],
+.loginCont input[type="password"],
+.loginCont input[type="button"],
+.loginCont input[type="submit"],
+.loginCont input[type="number"] {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    height: 3em;
+    font-size: 1.1em;
+    outline: 0;
+    border-style: solid;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    padding: 0 10px;
+    margin: 5px 0;
+    transition: all .2s ease-out 0s;
+}
+
+.loginCont .ulInputText {
+    border-width: 1px;
+    border-color: #D9D9D9;
+    background: white;
+}
+
+    .loginCont .ulInputText:hover,
+    .loginCont .ulInputText:focus {
+        border-color: #aaa;
+    }
+
+.loginCont .ulButton {
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #1F80E1;
+    cursor: pointer;
+}
+
+    .loginCont .ulButton:hover {
+        background-color: #0f6fd0;
+    }
+
+.loginCont label {
+    padding-right: 20px;
+}
+
+.loginCont input:checked + label {
+    color: #1F80E1;
+}
+
+/*ERRO E CAMPO OBRIGATÓRIO*/
+.ulErrorText {
+    color: #DE6969;
+    font-weight: bold;
+}
+
+.ulErrorInput {
+    border-color: #DE6969 !important;
+}
+
+
+/*LOADING*/
+.loading {
+    width: 200px;
+    height: 200px;
+    background: url(loading.svg) no-repeat;
+    background-size: contain;
+}
+
+/* TERMOS DE USO */
+
+.circleCont.termsOfUseCircleCont {
+}
+
+.loginCont.termsOfUseCont {
+    width: calc(100% - 250px);
+    height: 50vh;
+    padding: 0;
+    border-radius: 5px;
+}
+
+    .loginCont.termsOfUseCont .iframe {
+        height: calc(100% - 50px);
+        box-shadow: 0 2px 5px rgba(0,0,0,.15);
+        overflow-y: auto;
+        border-radius: 5px;
+        padding: 10px 2px 10px 10px;
+        width: 100%;
+        background: white;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .loginCont.termsOfUseCont .iframe iframe {
+        width: 100%;
+        border: none;
+        height: 100%;
+		overflow: auto;
+    }
+    
+ 
+ /* ÍCONES */
+.iconBox {
+	display: flex;
+	width: 100%;
+	flex-flow: wrap;
+}
+
+.iconBox .iconCont {
+	flex-basis: 33%;
+	flex-shrink: 2;
+	flex-grow: 1;
+	text-align: center;
+	padding-bottom: 15px;
+}
+	
+	.icon {
+		width: 30px;
+		height: 30px;
+		display: block;
+		margin: 0 auto;
+		opacity: .5;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+ 
+	.icon.iconInter {
+		background-image: url(Airplane.svg);
+	}
+	
+	.icon.iconRem {
+		background-image: url(Rematricula.svg);
+	}
+	
+	.icon.iconNotas {
+		background-image: url(Notas.svg);
+	}
+	
+	.icon.iconBoleto {
+		background-image: url(Boleto.svg);
+	}
+	
+	.icon.iconEduc {
+		background-image: url(Education.svg);
+	}
+	
+	.icon.iconCarreira {
+		background-image: url(Carreira.svg);
+	}
+	
+	.icon.iconBibl {
+		background-image: url(Biblioteca.svg);
+	}
+	
+.iconBox .iconCont em {
+	font-style: normal;
+}
+
+/* Primeiro Acesso */
+.inputContainer {
+	position: relative;
+}
+.firstAccess {
+	background: white;
+	width: 100%;
+	left: 0;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 100%;
+	border-top: 100vh solid white;
+	opacity: 0;
+	transition: opacity .5s ease .5s;
+}
+
+.input_mat .firstAccess {
+	padding-bottom: 10px;
+}
+
+.inputContainer input[type="text"]:hover ~ .firstAccess,
+.inputContainer input[type="password"]:hover ~ .firstAccess,
+.inputContainer input:focus ~ .firstAccess{
+	opacity: 1;
+	transition: opacity .5s ease 1s;
+}
+
+/*BOTÕES PARA SELECIONAR AMBIENTE*/
+
+
+/* - - - - - - - - - - - - - DISPLAY PEQUENO - - - - - - - - - - - - -  */
+
+@media screen and (max-width: 1000px) and (min-height: 600px), screen and (orientation: portrait) {
+
+    .logoCircle {
+        height: 20vh;
+        width: 100vw;
+        background-size: auto 80vh;
+    }
+
+    .circleCont {
+        height: 80vh;
+        top: initial;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        min-width: 0;
+        position: absolute;
+        background-size: 200%;
+        background-position: 55% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botLinkCont {
+        bottom: 2em;
+    }
+
+    .circleCont.termsOfUseCircleCont {
+    padding-top: 11vh;
+    justify-content: space-between;
+    }
+
+    .loginCont.termsOfUseCont {
+        width: 60vw;
+    }
+	
+	.iconBox {
+		flex-flow: row;
+		justify-content: space-between;
+		align-content: justify;
+		align-items: stretch;
+	}
+	
+	.iconBox .iconCont em {
+		display: none;
+	}
+	
+	.iconBox .iconCont .icon {
+		width: 100%;
+	}
+	
+}
+
+/* - - - - - - - - - - - - - TABLET - - - - - - - - - - - - -  */
+
+@media screen and (max-device-width: 1080px), screen and (max-width: 500px) {
+	
+    .circleCont.termsOfUseCircleCont {
+    padding-top: 11vh;
+    justify-content: space-between;
+    }
+
+    .loginCont.termsOfUseCont {
+        width: 60vw;
+    }
+	
+	.iconBox {
+		flex-flow: row;
+		justify-content: space-between;
+		align-content: justify;
+		align-items: stretch;
+	}
+	
+	.iconBox .iconCont em {
+		display: none;
+	}
+	
+	.iconBox .iconCont .icon {
+		width: 100%;
+	}
+	
+	.loginCont input[type="text"],
+    .loginCont input[type="password"],
+    .loginCont input[type="number"] {
+		font-size: 12pt!important;
+	}
+    
+    .loginCont.termsOfUseCont {
+        width: 80vw;
+        height: 35vh;
+    }
+	
+	.loginCont input[type="submit"],
+	.loginCont input[type="button"] {
+		position: relative;
+		z-index: 1;
+	}
+	
+	.botLinkCont {
+		display: none;
+	}
+	
+	.logoCircle {
+		height: 20vh;
+		background-size: auto 80vh;
+		width: 100vw;
+	}
+	
+	.circleCont {
+		top: initial;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		min-width: 0;
+		position: absolute;
+		background-size: 200%;
+		background-position: 55% 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 78vh;
+		padding: 0;
+	}
+	
+}
+
+/* - - - - - - - - - - - - - DISPLAY MINI - PAISAGEM - - - - - - - - - - - - -  */
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+
+    .logoCircle {
+        width: 30vw;
+        height: 100%;
+        width: 30%;
+        background-size: auto 135vh;
+    }
+
+    .circleCont {
+		padding: 0 40px 0 95px;
+		height: 100vh;
+		top: 0;
+		right: 0;
+		width: 63%;
+		min-width: 400px;
+		position: absolute;
+		float: right;
+		background: url(whiteCircle.svg) left no-repeat;
+		background-size: 200%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		left: initial;
+		}
+}
+
+
+/* - - - - - - - - - - - - - SMARTPHONE - - - - - - - - - - - - - */
+
+@media screen and (max-width: 500px) and (orientation: portrait), screen and (max-device-width: 500px) and (orientation: portrait) {
+	
+	.circleCont {
+		height: 80vh;
+		padding: 0;
+	}
+	
+}
+
+
+
+/* - - - - - - - - - - - - - SMARTPHONE - MODO PAISAGEM - - - - - - - - - - -  */
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+	
+	
+	
+}
+
